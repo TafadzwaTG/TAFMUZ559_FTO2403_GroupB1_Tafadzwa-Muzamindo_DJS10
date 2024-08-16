@@ -29,6 +29,7 @@ export default function App() {
       try {
         const result = await fetchPosts(); // Fetch data using the fetchPosts function
         setData(result); // Update state with fetched data
+      // eslint-disable-next-line no-unused-vars
       } catch (error) {
         setError("Failed to fetch data. Please try again later."); // Update state with error message
       } finally {
